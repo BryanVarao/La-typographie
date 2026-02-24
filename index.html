@@ -17,13 +17,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="top">
         <div class="wrapper">
             <div class="flex">
                 <h1>La typographie</h1>
@@ -37,34 +39,48 @@
                 <h2>« L’écriture, la plus noble conquête de l’homme»</h2> 
                 <h2>- Elsa Triolet</h2>
             </div>
+
             <div class="contenu">
                 <div class="gauche">
-                    <img src="" alt="">
+                    <p class="rond">&laquo;</p>
                     <h3>Quels guillemets choisir pour le Web ?</h3>
                 </div>
+
                 <div class="droite">
                     <h3>Qu’est-ce qu’un espace insécable ?</h3>
-                    <img src="" alt="">
+                    <p class="rond">&amp;nbsp</p>
                 </div>
+                
                 <div class="gauche">
-                    <img src="" alt="">
+                    <p class="rond">Windows</p>
                     <h3>S’occuper de la veuve et de l’orphelin.</h3>
                 </div>
+
                 <div class="droite">
                         <h3>Et la hauteur de ligne dans tout ça ?</h3>
-                        <img src="" alt="">
+                        <p class="rond">line-height</p>
                 </div>
-            </div>
-            <div class="texte">
-                <p>Lors du choix des polices de caractères, un concepteur Web se tourne vers celles conçues pour une bonne lecture à l’écran et qui se retrouvent sur la majorité des plateformes. On recommande ainsi une <strong>police sans sérif</strong> (sans petites pattes) qui facilite la lecture à l’écran. Pour le choix des polices, <strong>Google Font</strong> s’avère une ressource très utilisée qui permet de trouver facilement une police qui conviendra à tous les écrans.</p>
-                <p><strong>Test à faire en dernier :</strong>
-                    Insérez un espace insécable entre le mot «insécable» et le «?» du deuxième <article>. Observez le résultat lors du  redimensionnement de votre écran.Vous pourrez observer que le «?» suivra toujours le mot qui le précède, ce qui permet d’éviter d’avoir une ponctuation orpheline à la ligne suivante (problème de la veuve et l’orphelin).</p>
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="wrapper">
+            <div class="texte">
+                <p>Lors du choix des polices de caractères, un concepteur Web se tourne vers celles conçues pour une bonne lecture à l’écran et qui se retrouvent sur la majorité des plateformes. On recommande ainsi une <strong>police sans sérif</strong> (sans petites pattes) qui facilite la lecture à l’écran. Pour le choix des polices, <strong>Google Font</strong> s’avère une ressource très utilisée qui permet de trouver facilement une police qui conviendra à tous les écrans.</p>
+                <p><strong>Test à faire en dernier :</strong>Insérez un espace insécable entre le mot &laquo;insécable&raquo; et le &laquo;?&raquo; du deuxième &lt;article&gt;. Observez le résultat lors du  redimensionnement de votre écran.Vous pourrez observer que le «?» suivra toujours le mot qui le précède, ce qui permet d’éviter d’avoir une ponctuation orpheline à la ligne suivante (problème de la veuve et l’orphelin).</p>
+            </div>
+        </div>
+    </section>
+            
+        
+    
     <footer>
         <div class="wrapper">
-            <span>La typographie</span>
+            <div class="conteneur">
+                <p>La typographie</p>
+                <a href="#top" class="bouton"><span class="fleche material-symbols-outlined">arrow_upward</span></a>
+            </div>
         </div>
     </footer>
 

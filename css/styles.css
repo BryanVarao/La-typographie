@@ -14,36 +14,49 @@ html {
 /*-----------------------------------------------------
     Component
 -----------------------------------------------------*/
+body{
+    background-color: white;
+}
 .wrapper{
     max-width: 68.75rem;
     margin: 0 auto;
 }
 
 h1{
-    font: 900 6rem 'Roboto', sans-serif; letter-spacing: 0.33em; color: white;
+    font: 900 6rem 'Roboto', sans-serif;
+    letter-spacing: 0.33em;
+    color: white;
     margin: 0rem;
     padding: 0rem;
     
 }
 
 h2{
-    font: 100 3rem 'Lato', sans-serif; line-height: 60px; letter-spacing: 2.64px;
+    font: 100 3rem 'Lato', sans-serif;
+    line-height: 60px;
+    letter-spacing: 2.64px;
 }
 
 h3{
-    font: 400 2.25rem 'Quicksand', sans-serif; line-height: 60px;
+    font: 400 2.25rem 'Quicksand', sans-serif;
+    line-height: 60px;
 }
 
 p{
-   font: 400 1.25rem 'Roboto', sans-serif; line-height: 40px; 
+   font: 400 1.25rem 'Roboto', sans-serif;
+   line-height: 40px;
 }
 
-span{
+footer .wrapper p{
     font: 700 1.25rem 'Roboto', sans-serif;
+    margin: 0rem;
+
 }
 /*-----------------------------------------------------
     Éléments
 -----------------------------------------------------*/
+
+/*Header*/
 
 header{
     margin: 0rem 0rem;
@@ -52,6 +65,106 @@ header{
 
 }
 
+/*Section*/
 section .wrapper .citation{
     text-align: end;
+}
+
+.contenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 39px;
+}
+
+.gauche{
+    display: flex;
+    gap : 4.125rem;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.gauche:hover{
+    background-color: rgba(189, 195, 199, 1)
+}
+
+
+.droite{
+    display: flex;
+    gap: 4.125rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.droite:hover{
+    background-color: rgba(189, 195, 199, 1)
+}
+
+.rond{
+    width: 210px;
+    height: 210px;
+    border: 5px solid #D35400;
+
+    border-radius: 100px;
+
+    color: #D35400;
+
+    font-size: 1.875rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenu p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 60px;
+    letter-spacing: 0.05em;
+    color: #D35400;
+}
+
+section .wrapper .texte{
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+section .wrapper .texte p{
+    max-width: 471px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #2980B9;
+    padding: 25px;
+}
+
+footer .wrapper .conteneur{
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+}
+
+footer .bouton{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 3px solid #BDC3C7;
+
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+footer .fleche{
+    color: black;
+    font-size: 1.875rem;
 }
